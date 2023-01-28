@@ -8,9 +8,11 @@ public class TestClassSample
 {
 	@Test
 	
-	public void m1()
+	public void m1() throws InterruptedException
 	{
 		WebDriver m = new ChromeDriver();
+		Thread.sleep(2000);
+		m.close();
 	}
 
 }
